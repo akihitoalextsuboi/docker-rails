@@ -40,3 +40,6 @@ docker-compose down
 
 # restart
 docker-compose up
+
+# login
+docker-compose exec web bash
