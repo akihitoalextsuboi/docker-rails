@@ -5,5 +5,11 @@ services:
     command: bundle exec rails s -p 3000 -b '0.0.0.0'
     volumes:
       - .:/myapp
+      - bundle-data:/bundle
+      - sqlite-data:/myapp/db/development.sqlite3
     ports:
       - "3000:3000"
+
+volumes: 
+  bundle-data:
+  sqlite-data:
